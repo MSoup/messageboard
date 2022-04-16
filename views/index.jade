@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  nav
+    a(href="/new") Create Post
+
+  each user in messages 
+    .user
+      h3 #{user.user}
+      p #{user.text}
+      p #{user.added}
+
+
+   
+    

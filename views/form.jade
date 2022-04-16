@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  
+  form(name="add-post", method="post")
+    .input
+      h3 Submit a post
+      span.label User
+      input(name="messageUser")
+      br
+      span.label Text
+      input(name="messageText")
+    .actions 
+      input(type="submit")
